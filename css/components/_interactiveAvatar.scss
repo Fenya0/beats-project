@@ -10,6 +10,10 @@
     &--active {
     border-color: $Red;
     }
+
+    &:hover {
+        border-color: $Red;
+    }
 }
 
 .interactive-avatar__link {

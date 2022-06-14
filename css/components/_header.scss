@@ -28,6 +28,10 @@
 .menu__link {
     text-decoration: none;
     font-family: "Alegreya Sans";   
+
+    &:hover {
+        color: $Red;
+    }
 }
 
 .phone-number {

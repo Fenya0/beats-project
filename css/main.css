@@ -113,6 +113,9 @@ img {
   text-decoration: none;
   font-family: "Alegreya Sans";
 }
+.menu__link:hover {
+  color: #E01F3D;
+}
 
 .phone-number {
   text-decoration: none;
@@ -445,6 +448,9 @@ img {
   margin: 10px 2px 0 0;
 }
 .interactive-avatar--active {
+  border-color: #E01F3D;
+}
+.interactive-avatar:hover {
   border-color: #E01F3D;
 }
 
