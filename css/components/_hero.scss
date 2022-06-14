@@ -1,0 +1,14 @@
+.hero {
+    background: url("../img/BigEllipse.png") right 20% center no-repeat;
+    background-color: $grayHero;
+    height: 100vh;
+    min-height: 650px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+

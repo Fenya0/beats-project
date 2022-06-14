@@ -1,0 +1,23 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//ButtonsColor
+$buttonRed: #E01F3D;
+
+//FontsColor
+$lightGray: #666666;
+$darkGray: #292929;
+
+//BackgroundColor
+$grayHero: #F5F5F5;
+$GrayAnother: #F8FAF9;
+
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+
+//Components
+@import "components/_layout";
+@import "components/_hero";
+@import "components/_header";
+@import "components/_features";
