@@ -3,6 +3,7 @@
     background-color: $grayHero;
     height: 100vh;
     min-height: 650px;
+    color: $darkGray;
 }
 
 .hero__container {
@@ -12,3 +13,19 @@
     height: 100%;
 }
 
+.hero__title {
+    width: 40%;
+}
+
+.hero__main-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.hero__main-desc {
+    font-size: 21px;
+    margin-bottom: 36px;
+}

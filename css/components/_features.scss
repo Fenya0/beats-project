@@ -1,23 +1,21 @@
-.features {
-    display: flex;
-}
-
 .feature {
     display: flex;
 }
 
-.features__item {
-    margin-right: 23px;
-    &:last-child {
-        margin-right: 0;
-    }
+.feature__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .feature__icon  {
     height: 40px;
     width: 40px;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
 }
+
 .feature__desc {
-    max-width: 114px;
+    max-width: 115px;
 }
