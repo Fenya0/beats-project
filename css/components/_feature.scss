@@ -1,21 +1,14 @@
 .feature {
     display: flex;
 }
-
-.feature__list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
 .feature__icon  {
-    height: 40px;
     width: 40px;
     margin-right: 10px;
     display: flex;
     justify-content: center;
 }
 
-.feature__desc {
+.feature__text {
     max-width: 115px;
+    margin-right: 10px;
 }
