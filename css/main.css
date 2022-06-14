@@ -139,7 +139,7 @@ img {
   position: relative;
 }
 .hero:before {
-  content: url("/img/Vector1.svg");
+  content: url("/beats-project/img_/Vector1.svg");
   position: absolute;
   bottom: -20px;
   right: 20%;
@@ -160,7 +160,7 @@ img {
           justify-content: space-between;
   height: 100%;
   padding: 24px 0 65px;
-  background: url("/img/BigEllipse.png") right center/52% no-repeat;
+  background: url("/beats-project/img_/BigEllipse.png") right center/52% no-repeat;
 }
 
 .hero__title {
@@ -292,7 +292,7 @@ img {
   position: relative;
 }
 .benefits__item:before {
-  content: url(/img/ShapeSeparator.svg);
+  content: url(/beats-project/img_/ShapeSeparator.svg);
   position: absolute;
   top: 60px;
   right: 0;
@@ -350,7 +350,7 @@ img {
   position: relative;
 }
 .benefits-section::before {
-  content: url("/img/Vector2.svg");
+  content: url("/beats-project/img_/Vector2.svg");
   position: absolute;
   bottom: -20px;
   left: 5%;
@@ -470,7 +470,7 @@ img {
   position: relative;
 }
 .reviews-section::before {
-  content: url("/img/Vector3.svg");
+  content: url("/beats-project/img_/Vector3.svg");
   position: absolute;
   bottom: -30px;
   left: 7%;
@@ -480,11 +480,11 @@ img {
 
 .order-section {
   position: relative;
-  background: url("/img/OrderBackground.png") center center/100% no-repeat;
+  background: url("/beats-project/img_/OrderBackground.png") center center/100% no-repeat;
   color: #fff;
 }
 .order-section::before {
-  content: url("/img/Vector4.svg");
+  content: url("/beats-project/img_/Vector4.svg");
   position: absolute;
   top: -20px;
   right: 5%;
@@ -566,7 +566,7 @@ img {
 }
 .radio--checkbox .radio__visible:before {
   border-radius: 0;
-  background: url("/img/Check.svg") center center no-repeat;
+  background: url("/beats-project/img_/Check.svg") center center no-repeat;
 }
 
 .radio__elem {
