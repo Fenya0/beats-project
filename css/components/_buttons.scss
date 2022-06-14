@@ -6,10 +6,27 @@
     text-decoration: none;
     border-radius: 100px;
     line-height: 1;
+    border: none;
 
     &-red {
-        background: $buttonRed;
+        background: $Red;
         color: #fff;
+
+        &:hover {
+            background: #fff;
+            color: $Red;
+        }
+    }
+
+    &-transparent {
+        background: transparent;
+        color: #fff;
+        font-weight: 400;
+        padding: 18px 15px;
+
+        &:hover {
+            color: $Red;
+        }
     }
 }
 

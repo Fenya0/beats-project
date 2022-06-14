@@ -1,8 +1,12 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
-//ButtonsColor
-$buttonRed: #E01F3D;
+//Colors
+$Red: #E01F3D;
+
+//Z indexes
+
+$ZFixed-menu: 100;
 
 //FontsColor
 $lightGray: #666666;
@@ -27,3 +31,10 @@ $GrayAnother: #F8FAF9;
 @import "components/_benefits";
 @import "components/_benefit";
 @import "components/_benefits-section";
+@import "components/_reviews";
+@import "components/_interactiveAvatar";
+@import "components/_reviews-section";
+@import "components/_order-section";
+@import "components/_form";
+@import "components/_radio";
+@import "components/_fixed-menu";

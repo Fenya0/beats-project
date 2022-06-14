@@ -1,0 +1,11 @@
+.reviews-section {
+    position: relative;
+
+    &::before {
+        content: url("/img/Vector3.svg");
+        position: absolute;
+        bottom: -30px;
+        left: 7%;
+        transform: scale(2);
+    }
+}

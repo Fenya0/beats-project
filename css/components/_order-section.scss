@@ -1,0 +1,13 @@
+.order-section {
+    position: relative;
+    background: url("/img/OrderBackground.png")center center / 100% no-repeat;
+    color: #fff;
+
+    &::before {
+        content: url("/img/Vector4.svg");
+        position: absolute;
+        top: -20px;
+        right: 5%;
+        transform: scale(2);
+    }
+}

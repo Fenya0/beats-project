@@ -12,4 +12,8 @@
     text-transform: uppercase;
     text-align: center;
     color: $darkGray;
+    
+    &--light {
+        color: #fff;
+    }
 }
