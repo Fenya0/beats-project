@@ -1,10 +1,10 @@
 .order-section {
     position: relative;
-    background: url("/img/OrderBackground.png")center center / 100% no-repeat;
+    background: url("/beats-project/img/OrderBackground.png")center center / 100% no-repeat;
     color: #fff;
 
     &::before {
-        content: url("/img/Vector4.svg");
+        content: url("/beats-project/img/Vector4.svg");
         position: absolute;
         top: -20px;
         right: 5%;

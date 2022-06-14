@@ -6,7 +6,7 @@
     position: relative;
 
     &:before     {
-        content: url("/img/Vector1.svg");
+        content: url("/beats-project/img/Vector1.svg");
         position: absolute;
         bottom: -20px;
         right: 20%;
@@ -20,7 +20,7 @@
     justify-content: space-between;
     height: 100%;
     padding: 24px 0 65px;
-    background: url("/img/BigEllipse.png") right center / 52% no-repeat;
+    background: url("/beats-project/img/BigEllipse.png") right center / 52% no-repeat;
 } 
 
 .hero__title {
