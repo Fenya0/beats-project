@@ -1,7 +1,8 @@
 .order-section {
     position: relative;
-    background: url("/beats-project/img/OrderBackground.png")center center / 100% no-repeat;
+    background: url("/beats-project/img/OrderBackground.png")center center no-repeat;
     color: #fff;
+    background-size:cover;
 
     &::before {
         content: url("/beats-project/img/Vector4.svg");

@@ -184,6 +184,11 @@ img {
   line-height: 1.2;
 }
 
+.hero__main-btn {
+  display: block;
+  padding-top: 18px;
+}
+
 .features__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,8 +491,9 @@ img {
 
 .order-section {
   position: relative;
-  background: url("/beats-project/img/OrderBackground.png") center center/100% no-repeat;
+  background: url("/beats-project/img/OrderBackground.png") center center no-repeat;
   color: #fff;
+  background-size: cover;
 }
 .order-section::before {
   content: url("/beats-project/img/Vector4.svg");
