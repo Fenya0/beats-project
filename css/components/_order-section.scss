@@ -7,8 +7,15 @@
     &::before {
         content: url("/beats-project/img/Vector4.svg");
         position: absolute;
-        top: -20px;
+        top: rem(-20px);
         right: 5%;
         transform: scale(2);
+    }
+
+    @include phones {
+        &::before {
+            top: rem(-28px);
+            transform: scale(1);
+        }
     }
 }

@@ -1,0 +1,55 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+.footer__container {
+    margin: rem(20px) auto rem(20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.adress__desc {
+    font-size: rem(18px);
+    color: #000;
+    line-height: 1.1;
+
+    @include tablets {
+        font-size: rem(21px);
+    }
+}
+
+.footer__phone-number {
+    color: black;
+    font-size: rem(18px);
+    line-height: 1.16;
+    
+    @include tablets {
+        color: $Red;
+    }
+
+    @include phones {
+        color:#000;
+    }
+}
+
+.phone-number__icon-red {
+    fill: black;
+    transform: scale(0.7);
+
+    @include tablets {
+        fill: $Red;
+    }
+    
+    @include phones {
+        fill: black;
+    }
+}

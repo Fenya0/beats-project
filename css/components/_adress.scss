@@ -1,0 +1,8 @@
+.adress {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin-bottom: rem(18px);
+    }
+}

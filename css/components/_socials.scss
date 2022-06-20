@@ -1,0 +1,36 @@
+.socials__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: rem(150px);
+    margin-left: rem(20px);
+}
+
+.social_item {
+    width: rem(50px);
+    height: rem(50px);
+    margin-right: rem(10px);
+
+    @include phones {
+        width: rem(30px);
+        height: rem(30px);
+        margin-right: rem(24px);
+    }
+
+}
+
+.socials__icon {
+    width: rem(32px);
+    height: rem(32px);
+    fill: $Gray;
+    margin-right: rem(10px);
+
+    &:hover {
+        fill: black;
+    }
+
+    @include phones {
+        width: rem(24px);
+        height: rem(24px);
+    }
+}

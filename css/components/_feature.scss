@@ -1,14 +1,28 @@
 .feature {
     display: flex;
 }
+
 .feature__icon  {
-    width: 40px;
-    margin-right: 10px;
+    width: rem(40px);
+    margin-right: rem(10px);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .feature__text {
-    max-width: 115px;
-    margin-right: 10px;
+    max-width: rem(115px);
+    margin-right: rem(10px);
+}
+
+.battery-icon {
+    fill: black;
+}
+
+.listening-icon {
+    fill: black;
+}
+
+.plug-icon {
+    fill: black;
 }

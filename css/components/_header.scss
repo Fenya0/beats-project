@@ -1,24 +1,48 @@
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     color: $darkGray;
-    font-size: 18px;
-    padding: 0 12px 0;
+    font-size: rem(18px);
+    padding: 0 rem(12px) 0;
+}
+
+.phone-number.header__phone-number {
+    @include tablets {
+        display: none;
+    }
 }
 
 .logo {
-    height: 40px;
-    width: 40px;
+    height: rem(40px);
+    width: rem(40px);
+    fill: $Red;
+
+    @include phones {
+        height: rem(47px);
+        width: rem(47px);
+    }
+}
+
+.menu {
+    margin: 0 rem(30px);
+    padding-top: rem(10px);
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .menu__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .menu__item {
-    margin-right: 27px;
+    margin-right: rem(27px);
+    margin-bottom : rem(5px);
 
     &:last-child {
         margin-right: 0;
@@ -28,6 +52,7 @@
 .menu__link {
     text-decoration: none;
     font-family: "Alegreya Sans";   
+    white-space: nowrap;
 
     &:hover {
         color: $Red;
@@ -39,10 +64,12 @@
     line-height: 1;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+    padding-top: rem(13px);
 }
 
 .phone-number__icon-elem {
-    height: 14px;
-    width: 14px;
-    margin-right: 7px;
+    height: rem(14px);
+    width: rem(14px);
+    margin-right: rem(7px);
 }

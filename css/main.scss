@@ -1,8 +1,17 @@
 $containerWidth: 940px;
 $baseFontSize: 16px;
 
+//Breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //Colors
 $Red: #E01F3D;
+$Gray: #B3B3B3;
+
+//func
+@import "_media";
 
 //Z indexes
 
@@ -38,3 +47,8 @@ $GrayAnother: #F8FAF9;
 @import "components/_form";
 @import "components/_radio";
 @import "components/_fixed-menu";
+@import "components/_hamburger";
+@import "components/_map-section";
+@import "components/_footer";
+@import "components/_socials";
+@import "components/_adress";
