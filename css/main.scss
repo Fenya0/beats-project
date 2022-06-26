@@ -9,6 +9,8 @@ $phones: 480px;
 //Colors
 $Red: #E01F3D;
 $Gray: #B3B3B3;
+$SectionGray: #F8FAF9;
+$FullscreenMenu: #313131;
 
 //func
 @import "_media";
@@ -33,6 +35,9 @@ $GrayAnother: #F8FAF9;
 @import "components/_layout";
 @import "components/_header";
 @import "components/_hero";
+@import "components/_headphones-section";
+@import "components/_headphones-item";
+@import "components/_gear";
 @import "components/_feature";
 @import "components/_buttons";
 @import "components/_section";
@@ -52,3 +57,5 @@ $GrayAnother: #F8FAF9;
 @import "components/_footer";
 @import "components/_socials";
 @import "components/_adress";
+@import "components/_fullscreen__menu";
+

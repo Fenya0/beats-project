@@ -1,0 +1,37 @@
+.properties__list {
+    display: flex;
+    flex-direction: column;
+    padding: rem(25px);
+}
+
+.properties__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    margin-bottom: rem(25px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.properties__icon {
+    width: rem(30px);
+    height: rem(30px);
+}
+
+.properties__svg {
+    width: 25px;
+}
+
+.properties__name {
+    text-align: left;
+    width: rem(90px);
+}
+
+.properties__num {
+    width: rem(50px);
+    text-align: right;
+}
+

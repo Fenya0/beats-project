@@ -1,0 +1,35 @@
+.fullscreen__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    background-color: $FullscreenMenu;
+    display: none;
+}
+
+.fullscreen__menu-section {
+    position: relative;
+}
+
+.exit__svg {
+    position: absolute;
+    top: rem(30px);
+    right: rem(30px);
+    fill: #fff;
+}
+
+.fullscreen__menu__list {
+    font-size: rem(36px);
+    text-align: center;
+    color: #fff;
+}
+
+.fullscreen__menu__item {
+    margin-bottom: rem(20px);
+}
+
+.fullscreen__menu__link {
+    text-decoration: none;
+}

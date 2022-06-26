@@ -1,0 +1,53 @@
+.headphones-section {
+    position: relative;
+    background-color: $SectionGray;
+
+    &:before     {
+        content: url("/beats-project/img/Vector5.svg");
+        position: absolute;
+        bottom: rem(-20px);
+        right: 10%;
+        transform: scale(3);
+    }
+
+    @include tablets {
+        &::before {
+            transform: scale(2);
+        }
+    }
+}
+
+.headphones-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.arrow__icon {
+    width: rem(25px);
+    margin: 0 rem(10px) 0;
+
+    
+}
+
+.arrow__icon--left {
+    @include tablets {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    @include phones {
+        left: 1%;
+    }
+}
+.arrow__icon--right {
+    @include tablets {
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+
+    @include phones {
+        right: 1%;
+    }
+}

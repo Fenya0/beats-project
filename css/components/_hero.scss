@@ -5,7 +5,7 @@
     color: $darkGray;
     position: relative;
 
-    &:before     {
+    &:after     {
         content: url("/beats-project/img/Vector1.svg");
         position: absolute;
         bottom: rem(-20px);

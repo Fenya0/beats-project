@@ -1,12 +1,13 @@
 .benefits-section {
     position: relative;
 
-    &::before {
+    &::after {
         content: url("/beats-project/img/Vector2.svg");
         position: absolute;
         bottom: rem(-20px);
         left: 5%;
         transform: scale(2);
+        z-index: 1000;
     }
 
     @include phones {
