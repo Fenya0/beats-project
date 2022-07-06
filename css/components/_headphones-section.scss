@@ -1,53 +1,78 @@
 .headphones-section {
-    position: relative;
-    background-color: $SectionGray;
+  position: relative;
+  background-color: $SectionGray;
 
-    &:before     {
-        content: url("/beats-project/img/Vector5.svg");
-        position: absolute;
-        bottom: rem(-20px);
-        right: 10%;
-        transform: scale(3);
-    }
+  &:before {
+    content: url("/beats-project/img/Vector5.svg");
+    position: absolute;
+    bottom: rem(-20px);
+    right: 10%;
+    transform: scale(3);
+  }
 
-    @include tablets {
-        &::before {
-            transform: scale(2);
-        }
+  @include tablets {
+    &::before {
+      transform: scale(2);
     }
+  }
 }
 
 .headphones-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.arrow__icon {
-    width: rem(25px);
-    margin: 0 rem(10px) 0;
+.headphones__item {
+  display: flex;
+  justify-content: space-between;
 
-    
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.headphones__list {
+  flex-wrap: wrap;
+}
+
+
+.arrow__icon {
+  width: rem(20px);
+  margin: 0 rem(2px) 0;
+  flex-basis: 60px;
 }
 
 .arrow__icon--left {
-    @include tablets {
-        position: absolute;
-        top: 20%;
-        left: 10%;
-    }
-    @include phones {
-        left: 1%;
-    }
-}
-.arrow__icon--right {
-    @include tablets {
-        position: absolute;
-        top: 20%;
-        right: 10%;
-    }
+  @include tablets {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
 
-    @include phones {
-        right: 1%;
-    }
+  @include phones {
+    left: 0%;
+    top: 20%;
+  }
+}
+
+.arrow__icon--right {
+  @include tablets {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+
+  @include phones {
+    right: 0%;
+    top: 20%;
+    margin-right: rem(-8px);
+  }
 }

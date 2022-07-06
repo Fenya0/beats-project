@@ -1,158 +1,149 @@
-.headphones__item {
-    display: flex;
-    justify-content: space-between;
+.headphones__gear {
+  position: relative;
+  background-color: #9A9A9A;
+  width: rem(90px);
+  height: rem(90px);
+  border-radius: rem(4px);
+  margin-bottom: rem(25px);
 
-    @include tablets {
-        flex-direction: column;
-        align-items: center;
+  &:hover {
+    background-color: #6E6E6E;
+
+    .headphones__gear__popup {
+      opacity: 1;
+      transition: opacity .5s;
+      left: rem(90px);
     }
-}
+  }
 
-.headphones__gear{
-    position: relative;
-    background-color: #9A9A9A;
-    width: rem(90px);
-    height: rem(90px);
-    border-radius: rem(4px);
-    margin-bottom: rem(25px);
-
-    &:hover {
-        background-color: #6E6E6E;
-
-        .headphones__gear__popup {
-            opacity: 1;
-            transition: opacity .5s;
-            left: rem(90px);
-        }
-    }
-
-    @include tablets {
-        display: none;
-    }
+  @include tablets {
+    display: none;
+  }
 }
 
 .gear {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: rem(42px);
-    height: rem(42px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(42px);
+  height: rem(42px);
 }
 
 .headphones__gear__popup {
-    position: absolute;
-    top: 0;
-    left: rem(9000px);
-    width: rem(250px);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: rem(4px);
-    opacity: 0;
-    
-    &:hover {
-        left: rem(90px);
-        opacity: 1;
-        transition: opacity .5s;
-    }
+  position: absolute;
+  top: 0;
+  left: rem(9000px);
+  width: rem(250px);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: rem(4px);
+  opacity: 0;
 
-    
+  &:hover {
+    left: rem(90px);
+    opacity: 1;
+    transition: opacity .5s;
+  }
+
+
 }
 
 .headphones__img {
-    padding: rem(20px);
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: rem(20px);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    @include tablets {
-        width: rem(300px);
-        margin-bottom: rem(48px);
-    }
+  @include tablets {
+    width: rem(300px);
+    margin-bottom: rem(48px);
+  }
 
-    @include phones {
-        width: rem(280px);
-        margin-bottom: rem(25px);
-    }
+  @include phones {
+    width: rem(280px);
+    margin-bottom: rem(25px);
+  }
 }
 
 .headphones__desc {
-    padding-left: rem(20px);
-    flex: 1;
-    @include tablets {
-        text-align: center;
-    }
+  padding-left: rem(20px);
+  flex: 1;
+
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .headphones__name {
-    font-size: rem(36px);
-    font-weight: 700;
-    color: black;
-    text-transform: uppercase;
-    line-height: 1.15;
-    margin-bottom: rem(25px);
+  font-size: rem(36px);
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: rem(25px);
 
-    @include tablets {
-        font-size: rem(28px);
-    }
+  @include tablets {
+    font-size: rem(28px);
+  }
 
 }
 
 .headphones__lead {
-    margin-bottom: rem(27px);
+  margin-bottom: rem(27px);
 
-    @include tablets {
-        padding: 0 8% 0;
-    }
+  @include tablets {
+    padding: 0 8% 0;
+  }
 
-    @include phones {
-        padding: 0 6% 0;
-    }
+  @include phones {
+    padding: 0 6% 0;
+  }
 }
 
 .headphones__benefits {
-    display: flex;
-    margin-bottom: rem(25px);
+  display: flex;
+  margin-bottom: rem(25px);
 
-    @include tablets {
-        justify-content: center;
-        align-items: center;
-    }
+  @include tablets {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .headphones__benefit {
-    margin-right: rem(85px);
+  margin-right: rem(85px);
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .benefit__num {
-    font-weight: 700;
-    font-size: rem(18px);
-    color: black;
+  font-weight: 700;
+  font-size: rem(18px);
+  color: black;
 }
 
 .headphones__order {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    @include tablets {
-        justify-content: center;
-    }
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .headphones__price {
-    font-size: rem(36px);
-    color: #151515;
-    margin-right: rem(15px);
+  font-size: rem(36px);
+  color: #151515;
+  margin-right: rem(15px);
 
-    @include tablets {
-        font-size: rem(40px);
-    }
+  @include tablets {
+    font-size: rem(40px);
+  }
 
-    @include phones {
-        font-size: rem(32px);
-    }
+  @include phones {
+    font-size: rem(32px);
+  }
 }

@@ -6,6 +6,7 @@
     bottom: 0;
     z-index: 10000;
     background-color: $FullscreenMenu;
+    display: none;
 }
 
 .fullscreen__menu-section {
@@ -14,7 +15,7 @@
 
 .exit__svg {
     position: absolute;
-    top: rem(20px);
+    top: rem(36.32px);
     right: rem(10px);
     fill: #fff;
 }

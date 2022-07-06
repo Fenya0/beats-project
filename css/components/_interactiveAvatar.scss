@@ -7,7 +7,7 @@
     position: relative;
     margin: rem(10px) rem(2px) 0 0;
 
-    &--active {
+    &.active {
     border-color: $Red;
     }
 

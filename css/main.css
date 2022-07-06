@@ -343,37 +343,6 @@ img {
           justify-content: space-between;
 }
 
-.arrow__icon {
-  width: 1.5625rem;
-  margin: 0 0.625rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .arrow__icon--left {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .arrow__icon--left {
-    left: 1%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .arrow__icon--right {
-    position: absolute;
-    top: 20%;
-    right: 10%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .arrow__icon--right {
-    right: 1%;
-  }
-}
-
 .headphones__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,6 +360,54 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+.bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.headphones__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.arrow__icon {
+  width: 1.25rem;
+  margin: 0 0.125rem 0;
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .arrow__icon--left {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow__icon--left {
+    left: 0%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrow__icon--right {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .arrow__icon--right {
+    right: 0%;
+    top: 20%;
+    margin-right: -0.5rem;
   }
 }
 
@@ -861,12 +878,118 @@ img {
   }
 }
 
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 31.25rem;
+}
+@media screen and (max-width: 768px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team--desktop {
+    display: none;
+  }
+}
+
+.team--mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .team--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.team__item {
+  width: 13.75rem;
+  margin-right: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__member {
+  margin-bottom: 1.5625rem;
+}
+
+.team__title {
+  border: none;
+  background-color: inherit;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #292929;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+.team__title:after {
+  content: url("/beats-project/img/TeamButton.svg");
+  margin: 0.25rem;
+  padding: 0;
+  width: 0.5625rem;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .team__title {
+    margin-bottom: 1rem;
+  }
+}
+
+.team__title.active:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.team__content {
+  text-align: center;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.team__content-block {
+  height: 130px;
+}
+@media screen and (max-width: 768px) {
+  .team__content-block {
+    height: 26.25rem;
+  }
+}
+
+.member__job {
+  color: #292929;
+  margin-bottom: 0.1875rem;
+}
+
 .reviews__display {
   background: #F8FAF9;
   padding: 2.625rem;
   overflow: hidden;
   position: relative;
   margin-top: -0.9375rem;
+  min-height: 18.75rem;
 }
 .reviews__display::before {
   content: "";
@@ -883,12 +1006,16 @@ img {
 }
 
 .reviews__display-inner {
+  display: none;
+}
+
+.reviews__display-inner.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews__display-inner.active {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -970,7 +1097,7 @@ img {
   position: relative;
   margin: 0.625rem 0.125rem 0 0;
 }
-.interactive-avatar--active {
+.interactive-avatar.active {
   border-color: #E01F3D;
 }
 .interactive-avatar:hover {
@@ -1128,6 +1255,11 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.input-error {
+  border: solid 0.1875rem red;
+  background-color: #fcd2e3;
 }
 
 .radio {
@@ -1404,8 +1536,8 @@ img {
 
 .exit__svg {
   position: absolute;
-  top: 1.875rem;
-  right: 1.875rem;
+  top: 2.27rem;
+  right: 0.625rem;
   fill: #fff;
 }
 
@@ -1421,4 +1553,56 @@ img {
 
 .fullscreen__menu__link {
   text-decoration: none;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(31, 31, 31, 0.5);
+  z-index: 10000;
+  display: none;
+}
+
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 18.75rem;
+  min-height: 11.25rem;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2.3125rem;
+}
+
+.modal__text {
+  color: black;
+  font-size: 1.125rem;
+  margin-bottom: 1.125rem;
+}
+
+.modal__button {
+  text-decoration: none;
+}
+
+.modal-error {
+  color: red;
+  font-weight: 700;
 }

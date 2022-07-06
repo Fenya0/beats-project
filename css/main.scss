@@ -11,6 +11,7 @@ $Red: #E01F3D;
 $Gray: #B3B3B3;
 $SectionGray: #F8FAF9;
 $FullscreenMenu: #313131;
+$FullscreenModal: #313131;
 
 //func
 @import "_media";
@@ -45,6 +46,8 @@ $GrayAnother: #F8FAF9;
 @import "components/_benefits";
 @import "components/_benefit";
 @import "components/_benefits-section";
+@import "components/_team-section";
+@import "components/_team";
 @import "components/_reviews";
 @import "components/_interactiveAvatar";
 @import "components/_reviews-section";
@@ -58,4 +61,6 @@ $GrayAnother: #F8FAF9;
 @import "components/_socials";
 @import "components/_adress";
 @import "components/_fullscreen__menu";
+@import "components/_modal";
+
 

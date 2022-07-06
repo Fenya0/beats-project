@@ -1,0 +1,41 @@
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(31, 31, 31, 0.5);
+  z-index: 10000;
+  display: none;
+} 
+
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: rem(300px);
+  min-height: rem(180px);
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  padding: rem(37px); 
+}
+
+.modal__text {
+  color: black;
+  font-size: rem(18px);
+  margin-bottom: rem(18px);
+}
+
+.modal__button {
+  text-decoration: none;
+}
+
+.modal-error {
+  color: red;
+  font-weight: 700;
+}
