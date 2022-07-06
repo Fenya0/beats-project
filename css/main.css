@@ -941,6 +941,9 @@ img {
   text-align: center;
   margin-bottom: 0.625rem;
 }
+.team__title:hover {
+  color: #E01F3D;
+}
 .team__title:after {
   content: url("/beats-project/img/TeamButton.svg");
   margin: 0.25rem;
