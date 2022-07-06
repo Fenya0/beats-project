@@ -10,7 +10,6 @@ const validateFields = (form, fieldsArray) => {
   const content = modal.find('.modal__text');
   const inputError = form.find(".input-error");
 
-  modal.removeClass("modal-error");
   return inputError.length === 0;
 }
 
@@ -24,8 +23,9 @@ $('.form').submit(e => {
   const to = form.find("[name='to']");
   const modal = $("#modal");
   const content = modal.find('.modal__text');
-
   const isValid = validateFields(form, [name, phone, comment, to]);
+
+  content.removeClass("modal-error");
 
   if(isValid) {
     $.ajax({
