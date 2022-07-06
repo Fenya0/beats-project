@@ -46,6 +46,10 @@
   text-align: center;
   margin-bottom: rem(10px);
 
+  &:hover {
+    color: $Red;
+  }
+  
   &:after {
     content: url("/beats-project/img/TeamButton.svg");
     margin: rem(4px);
