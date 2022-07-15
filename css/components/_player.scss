@@ -31,7 +31,7 @@
   width: rem(35px);
   height: rem(35px);
   border: none;
-  background-color: $BackgroundGray;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -54,7 +54,15 @@
 
 .player__playback {
   @include playerSliderBefore;
-  width: rem(440px);
+  width: 75%;
+
+  // @include tablets {
+  //   width: rem(350px);
+  // }
+
+  // @include phones {
+  //   width: rem(250px);
+  // }
 }
 
 @mixin currentSlider {
@@ -78,19 +86,27 @@
 
 .player__volume-slider {
   @include playerSliderBefore;
-  width: rem(60px);
+  width: 10%;
 }
 
 .player__volume-button {
-  width: rem(13px);
-  height: rem(35px);
   border: none;
   background-color: transparent;
 
   &:before {
     content: url(/beats-project/img/PlayerVolume.svg);
     width: 13px;
-    height: 16px;
+    height: 17px;
+
+    @include tablets {
+      width: 11px;
+      height: 15px;
+    }
+  
+    @include phones {
+      width: 8px;
+      height: 10px;
+    }
   }
 }
 
@@ -101,8 +117,15 @@
   height: rem(15px);
   border-radius: 50%;
   border: none;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-8px);
+
+  @include tablets {
+    transform: scale(0.75) translateX(-7px);
+  }
+
+  @include phones {
+    transform: scale(0.5) translateX(-7px);
+  }
 }
 
 .player__volume-slider__button {

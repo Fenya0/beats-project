@@ -26,9 +26,6 @@ $(".player__playback").click(e => {
   player.seekTo(newPlaybackPositionSec);
 });
 
-
-
-
 $(".player__volume-slider").click(e => {
   e.preventDefault();
 
@@ -41,13 +38,8 @@ $(".player__volume-slider").click(e => {
     left: `${newButtonPosition}%`
   });
 
-  console.log(clickedPosition);
-  
   player.setVolume(newVolume);
 });
-
-
-
 
 $(".player__splash").click(e =>{
   player.playVideo();
@@ -106,8 +98,6 @@ const onPlayerStateChange = event => {
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("yt-player", {
-    height: "400",
-    width: "660",
     videoId: "S_dfq9rFWAE",
     events: {
       onReady: onPlayerReady,
