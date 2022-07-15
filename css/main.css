@@ -1391,12 +1391,21 @@ img {
   background-size: cover;
 }
 
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background: #fff;
+  z-index: 10000;
 }
 
 .footer__container {
@@ -1747,23 +1756,29 @@ img {
   padding: 0 1.5625rem;
 }
 
-.player.active .player__splash {
-  display: none;
-}
-.player.active .player__start:before {
+.player__start:before {
   content: url(/beats-project/img/PlayerPlay.svg);
   width: 12px;
   height: 16px;
 }
+
+.player.active .player__splash {
+  display: none;
+}
 .player.paused .player__start:before {
   content: url(/beats-project/img/PlayerPause1.png);
+}
+
+.player__controls {
+  z-index: 10000;
 }
 
 .player__start {
   width: 2.1875rem;
   height: 2.1875rem;
   border: none;
-  background-color: #E01F3D;
+  background-color: #151515;
+  cursor: pointer;
 }
 
 .player__playback {
@@ -1783,14 +1798,27 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.player__playback:after {
-  content: "";
+
+.playback__done {
   position: absolute;
   height: 0.25rem;
   display: block;
   background: #E01F3D;
   left: 0;
   top: 50%;
+  width: 0%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.current-volume {
+  position: absolute;
+  height: 0.25rem;
+  display: block;
+  background: #E01F3D;
+  left: 0;
+  top: 50%;
+  width: 0%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1809,17 +1837,6 @@ img {
   right: 0;
   display: block;
   background: #333;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.player__volume-slider:after {
-  content: "";
-  position: absolute;
-  height: 0.25rem;
-  display: block;
-  background: #E01F3D;
-  left: 0;
-  top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -1846,7 +1863,7 @@ img {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  left: 50%;
+  left: 0%;
   position: absolute;
 }
 

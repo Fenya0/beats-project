@@ -546,10 +546,12 @@
               <div class="player__controls">
                 <button class="player__start"></button>
                 <div class="player__playback">
+                  <div class="playback__done"></div>
                   <button class="player__playback-button"></button>
                 </div>
                 <button class="player__volume-button"></button>
                 <div class="player__volume-slider">
+                  <div class="current-volume"></div>
                   <button class="player__volume-slider__button"></button>
                 </div>
               </div>
@@ -633,6 +635,7 @@
         </div>
       </section>
       <section class="section map-section">
+        <div class="map" id="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <adress class="adress">
@@ -752,7 +755,9 @@
   <script src="/beats-project/javascript/menu-acco.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
   <script src="/beats-project/javascript/player.js"></script>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="/beats-project/javascript/map.js"></script>
+  
 </body>
 
 </html>

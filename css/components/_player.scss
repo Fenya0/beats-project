@@ -1,17 +1,18 @@
+.player__start {
+  &:before {
+    content: url(/beats-project/img/PlayerPlay.svg);
+    width: 12px;
+    height: 16px;
+  }
+}
+
 .player {
   &.active {
     .player__splash {
-    display: none;
-    }
-    
-    .player__start {
-      &:before {
-      content: url(/beats-project/img/PlayerPlay.svg);
-      width: 12px;
-      height: 16px;
-      }
+      display: none;
     }
   }
+
 
   &.paused {
     .player__start {
@@ -22,11 +23,16 @@
   }
 }
 
+.player__controls {
+  z-index: 10000;
+}
+
 .player__start {
   width: rem(35px);
   height: rem(35px);
   border: none;
-  background-color: $Red;
+  background-color: $BackgroundGray;
+  cursor: pointer;
 }
 
 @mixin playerSliderBefore {
@@ -44,21 +50,30 @@
     background: #333;
     transform: translateY(-50%);
   }
-
-  &:after {
-    content:"";
-    position: absolute;
-    height: rem(4px);
-    display: block;
-    background: $Red;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}}
+}
 
 .player__playback {
   @include playerSliderBefore;
   width: rem(440px);
+}
+
+@mixin currentSlider {
+  position: absolute;
+  height: rem(4px);
+  display: block;
+  background: $Red;
+  left: 0;
+  top: 50%;
+  width: 0%;
+  transform: translateY(-50%);
+}
+
+.playback__done {
+  @include currentSlider;
+}
+
+.current-volume {
+  @include currentSlider;
 }
 
 .player__volume-slider {
@@ -87,12 +102,12 @@
   border-radius: 50%;
   border: none;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .player__volume-slider__button {
   @include SliderButton;
-  left: 50%;
+  left: 0%;
   position: absolute;
 }
 
