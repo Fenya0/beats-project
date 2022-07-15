@@ -1,0 +1,49 @@
+.player-section__title {
+  margin-bottom: rem(40px);
+}
+
+.player-section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: rem(400px);
+}
+
+.player {
+  position: relative;
+  display: block;
+  width:  rem(660px);
+  height: 100%;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/beats-project/img/playerSplash.png') center center/cover no-repeat;
+  cursor: pointer;
+
+  &:after {
+    content: url(/beats-project/img/PlayerPlayBig.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: rem(35px);
+  background: $BackgroundGray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem(25px);
+}
+

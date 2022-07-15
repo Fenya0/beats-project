@@ -1,0 +1,72 @@
+.colours-section {
+  position: relative;
+  background: url('/beats-project/img/ColorsBackground.png')center no-repeat;
+  background-size: cover;
+}
+
+.colours-container {
+  position: initial;
+}
+
+.colours-section__title {
+  position: absolute;
+  text-align: left;
+  top: 20%;
+}
+
+.colours-menu {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000;
+}
+
+.colours-menu__item {
+  display: flex;
+}
+
+.colours-menu__title {
+  width: rem(100px);
+  font-size: rem(36px);
+  color: #fff;
+  display: block;
+  padding: rem(45px) rem(20px);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+
+  &.one {
+    background: #999;
+  }
+
+  &.two  {
+    background: $BackgroundGray;
+  }
+
+  &.three {
+    background: $Red  ;
+  }
+
+  @include phones {
+    width: rem(90px);
+    padding: rem(45px) rem(10px);
+  }
+}
+
+.colours-menu__content {
+  overflow: hidden;
+  background-color: rgba(51, 53, 55, 0.8);
+  width: 0;
+  color: #fff;
+  transition: width 0.2s;
+
+  // &.active {
+  //   width: rem(500px);
+  // }
+}
+
+.colours-menu__text {
+  padding: rem(40px);
+}

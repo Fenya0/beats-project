@@ -1609,3 +1609,256 @@ img {
   color: red;
   font-weight: 700;
 }
+
+.colours-section {
+  position: relative;
+  background: url("/beats-project/img/ColorsBackground.png") center no-repeat;
+  background-size: cover;
+}
+
+.colours-container {
+  position: initial;
+}
+
+.colours-section__title {
+  position: absolute;
+  text-align: left;
+  top: 20%;
+}
+
+.colours-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100000;
+}
+
+.colours-menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colours-menu__title {
+  width: 6.25rem;
+  font-size: 2.25rem;
+  color: #fff;
+  display: block;
+  padding: 2.8125rem 1.25rem;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.colours-menu__title.one {
+  background: #999;
+}
+.colours-menu__title.two {
+  background: #151515;
+}
+.colours-menu__title.three {
+  background: #E01F3D;
+}
+@media screen and (max-width: 480px) {
+  .colours-menu__title {
+    width: 5.625rem;
+    padding: 2.8125rem 0.625rem;
+  }
+}
+
+.colours-menu__content {
+  overflow: hidden;
+  background-color: rgba(51, 53, 55, 0.8);
+  width: 0;
+  color: #fff;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+.colours-menu__text {
+  padding: 2.5rem;
+}
+
+.player-section__title {
+  margin-bottom: 2.5rem;
+}
+
+.player-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25rem;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 41.25rem;
+  height: 100%;
+}
+
+.player__splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/beats-project/img/playerSplash.png") center center/cover no-repeat;
+  cursor: pointer;
+}
+.player__splash:after {
+  content: url(/beats-project/img/PlayerPlayBig.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.player__controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2.1875rem;
+  background: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5625rem;
+}
+
+.player.active .player__splash {
+  display: none;
+}
+.player.active .player__start:before {
+  content: url(/beats-project/img/PlayerPlay.svg);
+  width: 12px;
+  height: 16px;
+}
+.player.paused .player__start:before {
+  content: url(/beats-project/img/PlayerPause1.png);
+}
+
+.player__start {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  border: none;
+  background-color: #E01F3D;
+}
+
+.player__playback {
+  position: relative;
+  height: 0.9375rem;
+  width: 27.5rem;
+}
+.player__playback:before {
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  background: #333;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.player__playback:after {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  display: block;
+  background: #E01F3D;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.player__volume-slider {
+  position: relative;
+  height: 0.9375rem;
+  width: 3.75rem;
+}
+.player__volume-slider:before {
+  content: "";
+  height: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: block;
+  background: #333;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.player__volume-slider:after {
+  content: "";
+  position: absolute;
+  height: 0.25rem;
+  display: block;
+  background: #E01F3D;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.player__volume-button {
+  width: 0.8125rem;
+  height: 2.1875rem;
+  border: none;
+  background-color: transparent;
+}
+.player__volume-button:before {
+  content: url(/beats-project/img/PlayerVolume.svg);
+  width: 13px;
+  height: 16px;
+}
+
+.player__volume-slider__button {
+  position: absolute;
+  background: #E01F3D;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  border: none;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+}
+
+.player__playback-button {
+  position: absolute;
+  background: #E01F3D;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  border: none;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 0%;
+}

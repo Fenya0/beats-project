@@ -12,6 +12,7 @@ $Gray: #B3B3B3;
 $SectionGray: #F8FAF9;
 $FullscreenMenu: #313131;
 $FullscreenModal: #313131;
+$BackgroundGray: #151515;
 
 //func
 @import "_media";
@@ -62,5 +63,8 @@ $GrayAnother: #F8FAF9;
 @import "components/_adress";
 @import "components/_fullscreen__menu";
 @import "components/_modal";
+@import "components/_colours-menu";
+@import "components/_player-section";
+@import "components/_player";
 
 

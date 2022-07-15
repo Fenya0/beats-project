@@ -1,0 +1,102 @@
+.player {
+  &.active {
+    .player__splash {
+    display: none;
+    }
+    
+    .player__start {
+      &:before {
+      content: url(/beats-project/img/PlayerPlay.svg);
+      width: 12px;
+      height: 16px;
+      }
+    }
+  }
+
+  &.paused {
+    .player__start {
+      &:before {
+        content: url(/beats-project/img/PlayerPause1.png);
+      }
+    }
+  }
+}
+
+.player__start {
+  width: rem(35px);
+  height: rem(35px);
+  border: none;
+  background-color: $Red;
+}
+
+@mixin playerSliderBefore {
+  position: relative;
+  height: rem(15px);
+
+  &:before {
+    content: "";
+    height: rem(4px);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: block;
+    background: #333;
+    transform: translateY(-50%);
+  }
+
+  &:after {
+    content:"";
+    position: absolute;
+    height: rem(4px);
+    display: block;
+    background: $Red;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}}
+
+.player__playback {
+  @include playerSliderBefore;
+  width: rem(440px);
+}
+
+.player__volume-slider {
+  @include playerSliderBefore;
+  width: rem(60px);
+}
+
+.player__volume-button {
+  width: rem(13px);
+  height: rem(35px);
+  border: none;
+  background-color: transparent;
+
+  &:before {
+    content: url(/beats-project/img/PlayerVolume.svg);
+    width: 13px;
+    height: 16px;
+  }
+}
+
+@mixin SliderButton {
+  position: absolute;
+  background: $Red;
+  width: rem(15px);
+  height: rem(15px);
+  border-radius: 50%;
+  border: none;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.player__volume-slider__button {
+  @include SliderButton;
+  left: 50%;
+  position: absolute;
+}
+
+.player__playback-button {
+  @include SliderButton;
+  left: 0%;
+}
