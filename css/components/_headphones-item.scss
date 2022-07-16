@@ -69,6 +69,7 @@
 .headphones__desc {
   padding-left: rem(20px);
   flex: 1;
+  min-height: rem();
 
   @include tablets {
     text-align: center;
@@ -138,6 +139,7 @@
   font-size: rem(36px);
   color: #151515;
   margin-right: rem(15px);
+  line-height: 1;
 
   @include tablets {
     font-size: rem(40px);
