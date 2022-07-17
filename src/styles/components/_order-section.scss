@@ -1,0 +1,21 @@
+.order-section {
+    position: relative;
+    background: url("./img/OrderBackground.png")center center no-repeat;
+    color: #fff;
+    background-size:cover;
+
+    &::before {
+        content: url("./img/Vector4.svg");
+        position: absolute;
+        top: rem(-20px);
+        right: 5%;
+        transform: scale(2);
+    }
+
+    @include phones {
+        &::before {
+            top: rem(-28px);
+            transform: scale(1);
+        }
+    }
+}

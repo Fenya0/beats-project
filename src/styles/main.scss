@@ -1,0 +1,68 @@
+$containerWidth: 940px;
+$baseFontSize: 16px;
+
+//Breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+//Colors
+$Red: #E01F3D;
+$Gray: #B3B3B3;
+$SectionGray: #F8FAF9;
+$FullscreenMenu:  rgba(31, 31, 31, 0.9);
+$FullscreenModal: #313131;
+$BackgroundGray: #151515;
+
+//func
+@import "components/_media";
+
+//Z indexes
+
+$ZFixed-menu: 100;
+
+//FontsColor
+$lightGray: #666666;
+$darkGray: #292929;
+
+//BackgroundColor
+$grayHero: #F5F5F5;
+$GrayAnother: #F8FAF9;
+
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+
+//Components
+@import "components/_layout";
+@import "components/_header";
+@import "components/_hero";
+@import "components/_headphones-section";
+@import "components/_headphones-item";
+@import "components/_gear";
+@import "components/_feature";
+@import "components/_buttons";
+@import "components/_section";
+@import "components/_headline";
+@import "components/_benefits";
+@import "components/_benefit";
+@import "components/_benefits-section";
+@import "components/_team-section";
+@import "components/_team";
+@import "components/_reviews";
+@import "components/_interactiveAvatar";
+@import "components/_reviews-section";
+@import "components/_order-section";
+@import "components/_form";
+@import "components/_radio";
+@import "components/_fixed-menu";
+@import "components/_hamburger";
+@import "components/_map-section";
+@import "components/_footer";
+@import "components/_socials";
+@import "components/_adress";
+@import "components/_fullscreen__menu";
+@import "components/_modal";
+@import "components/_colours-menu";
+@import "components/_player-section";
+@import "components/_player";

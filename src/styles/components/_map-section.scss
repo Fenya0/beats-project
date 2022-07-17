@@ -1,0 +1,13 @@
+.map-section {
+    position: relative;
+    background: url('./img/Map.png')center center no-repeat;
+    background-size: cover;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
