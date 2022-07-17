@@ -20,7 +20,7 @@ const styles = [
 
 const scripts = [
   "src/scripts/*.js",
-  "!src/scripts/slider.js"
+  "!src/scripts/slider.js",
 ];
 
 const scriptsCopy = [

@@ -134,6 +134,7 @@
 .headphones__order {
   display: flex;
   align-items: center;
+  height: 3.5rem;
 
   @include tablets {
     justify-content: center;
